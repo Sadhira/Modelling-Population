@@ -99,25 +99,6 @@ end
 netDiam = diam/(N^2);
 %netdiamr = diamr/100000000;
 
-%%
-% Ratty's code 
-% 
-% shortest_distance=Inf(N); %%all nodes are initially assumed to be unconnected
-% for i=1:1:N                     %%This loop uses Dijkstra's algorithm to find the shortest
-%     shortest_distance(i,:)=dijkstra(WC,i);  %%distance of a selected node to all other nodes
-% end
-% total_length=0;  %%variable for the sum of all the shortest lengths
-% for i=1:1:N       %%loop for calculating the sum for all shortest lengths
-%     for j=i:1:N
-%         if shortest_distance(i,j)~=Inf & i~=j
-%            total_length=total_length+shortest_distance(i,j);
-%         end
-%     end
-% end
-% b=1:1:287;
-% b=sum(b,2)-13*287; %%-13*287 to exclude the unconnected nodes.
-% diameter=total_length/b; %%Here the variable b represents total number of connections 
-% 
 
 %% number of links
 
