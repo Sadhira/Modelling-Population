@@ -27,7 +27,7 @@ plot(0:10, x);
 % xp = -k * x;
 
 figure(2)
-%[t,x]=ode45(’F’,[t0,tf],[x10,x20]);
+%[t,x]=ode45(â€™Fâ€™,[t0,tf],[x10,x20]);
 %in this case, there is only x, not x1 and x2
 %so for the last parameter, just use x0 which is 4
 [t,x] = ode45('expeq', [0 10], 4);
